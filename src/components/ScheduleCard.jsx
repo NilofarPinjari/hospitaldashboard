@@ -45,7 +45,7 @@ export default function ScheduleCard() {
         )}
       </div>
 
-      <div className="datestrip">
+      <div className="dateline">
         <button className="arrow" onClick={() => changeWeek(-1)}>&#10094;</button>
 
         <div className="daterow">
