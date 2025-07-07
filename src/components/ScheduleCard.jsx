@@ -21,27 +21,27 @@ export default function ScheduleCard() {
     <div className="schedulecard">
 
       <div className="tophead">
-        <h4>{MONTHS[date.getMonth()]} {date.getFullYear()}</h4>
-        <button className="menu-btn" onClick={() => setShowPicker(!showPicker)}>⋯</button>
+      <h4>{MONTHS[date.getMonth()]} {date.getFullYear()}</h4>
+      <button className="menu-btn" onClick={() => setShowPicker(!showPicker)}>⋯</button>
 
-        {showPicker && (
-          <div className="picker">
-            <div className="year">
-              <button className="arrow" onClick={() => changeYear(-1)}>&#10094;</button>
-              <span>{date.getFullYear()}</span>
-              <button className="arrow" onClick={() => changeYear(1)}>&#10095;</button>
+      {showPicker && (
+        <div className="picker">
+        <div className="year">
+        <button className="arrow" onClick={() => changeYear(-1)}>&#10094;</button>
+            <span>{date.getFullYear()}</span>
+            <button className="arrow" onClick={() => changeYear(1)}>&#10095;</button>
             </div>
 
             <ul className="month">
-              {MONTHS.map((m, i) => (
-                <li key={m}
-                    className={i === date.getMonth() ? 'active' : ''}
-                    onClick={() => pickMonth(i)}>
-                  {m}
-                </li>
-              ))}
+            {MONTHS.map((m, i) => (
+            <li key={m}
+            className={i === date.getMonth() ? 'active' : ''}
+            onClick={() => pickMonth(i)}>
+            {m}
+            </li>
+            ))}
             </ul>
-          </div>
+           </div>
         )}
       </div>
 
