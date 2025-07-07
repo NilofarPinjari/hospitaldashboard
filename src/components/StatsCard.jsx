@@ -1,4 +1,4 @@
-import { FiCalendar, FiAlertCircle, FiUser } from 'react-icons/fi'; 
+import {FiCalendar,FiAlertCircle,FiUser} from 'react-icons/fi'; 
 import './StatsCard.css';
 
 const iconMap = {
@@ -10,13 +10,15 @@ const iconMap = {
 const StatsCard = ({ title, count, color, icon = 'calendar' }) => {
   return (
     <div className="card">
-      <div className={`icon ${color}`}>{iconMap[icon]}</div>
+    <div className={`icon ${color}`}>{iconMap[icon]}</div>
 
-      <div className="info">
+    <div className="info">
         <h4 className={color}>{count}</h4>
+        
         <p>{title}</p>
         <span className="tag">today</span>
-      </div>
+     
+    </div>
     </div>
   );
 };
