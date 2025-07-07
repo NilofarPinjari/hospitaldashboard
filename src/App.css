@@ -1,0 +1,88 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #d4d2d2b5;
+  color: #333;
+}
+
+.dashboard {
+  display: flex;
+}
+.dashboard-main {
+  flex: 1;
+  padding: 0px 32px;
+}
+.title {
+  margin: 10px 0px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.welcomecard {
+  background: linear-gradient(135deg, #5120f1 , #64b4ff) ;
+  border-radius: 8px;
+  height: 160px;
+  display: flex;
+  position: relative;
+
+  align-items: center;
+  padding: 24px;
+  color: #fff;
+}
+.image-bg img{
+  object-fit: cover;
+  position: absolute;
+  right: 20px;
+  top: 2px;
+  height: 150px;
+  transform: rotate(90deg);
+  opacity: 0.4;
+}
+.welcometext h2 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+.welcometext p {
+  font-size: 14px;
+  max-width: 470px;
+}
+
+.statsrow {
+  display: flex;
+  justify-content: space-around;
+  gap: 17px;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 0;
+}
+
+.doctor{
+  display: flex;
+  justify-content: space-around;
+}
+.main {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  align-items: flex-start;
+}
+
+.main-left {
+  width: 65%;
+}
+
+.main-right {
+  width: 35%;
+  
+  display: flex;
+  justify-content: flex-start;
+}
