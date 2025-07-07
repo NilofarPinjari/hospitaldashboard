@@ -20,7 +20,7 @@ const Sidebar = () => {
       <nav className="nav">
          
 
-     <button className="item logo"><FaHeartbeat /></button>
+     <button className="itemlogo"><FaHeartbeat /></button>
 
         <button className="item "><FiHome /></button>
         <button className="item"><FiCalendar /></button>
@@ -31,7 +31,7 @@ const Sidebar = () => {
         <button className="item"><FiSettings /></button>
       </nav>
 
-      <button className="item logout"><FiLogOut /></button>
+      <button className="itemlogout"><FiLogOut /></button>
     </aside>
   );
 };
